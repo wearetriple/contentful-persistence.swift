@@ -56,6 +56,9 @@ public protocol ContentSysPersistable: NSObject {
  for more information.
  */
 public protocol SyncSpacePersistable: AnyObject {
+    /// The current content type id
+    var id: String? { get set }
+    
     /// The current synchronization token
     var syncToken: String? { get set }
     
